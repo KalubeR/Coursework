@@ -35,7 +35,7 @@ class Dec2Hex
 	}
 	catch(NumberFormatException e)
 	{
-		System.out.print("Arguemnt not a number");
+		System.out.print("Argument not an integer");
 	}
     }
 }
