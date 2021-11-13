@@ -41,4 +41,12 @@ public class Tests {
         String input = "-10";
         Assert.assertEquals("Only positive numbers are allowed!", Dec2Hex.convertToHex(new String[]{input}));
     }
+	
+	@Test
+    ///Test with purpose to see how Jenkins will react to a failed test
+    public void purposefullyFailedTest()
+    {
+        String input = "1";
+        Assert.assertEquals("2", Dec2Hex.convertToHex(new String[]{input}));
+    }
 }
