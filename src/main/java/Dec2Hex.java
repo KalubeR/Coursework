@@ -19,6 +19,10 @@ class Dec2Hex {
             Arg1 = Integer.parseInt(args[0]);
             char ch[]={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
             int rem, num;
+			if(Arg1 < 0) 
+			{
+                throw new IllegalArgumentException("Only positive numbers are allowed!");
+            }
             num = Arg1;
             String hexadecimal="";
             System.out.println("Converting the Decimal Value " + num + " to Hex...");
@@ -42,6 +46,12 @@ class Dec2Hex {
         catch(NumberFormatException e)
         {
             String message = "Argument not an integer";
+            System.out.print(message);
+            return message;
+        }
+		catch(IllegalArgumentException e)
+        {
+            String message = e.getMessage();
             System.out.print(message);
             return message;
         }
