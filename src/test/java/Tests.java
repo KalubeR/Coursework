@@ -47,6 +47,6 @@ public class Tests {
     ///public void purposefullyFailedTest()
     ///{
     ///    String input = "1";
-    ///    Assert.assertEquals("2", Dec2Hex.convertToHex(new String[]{input}));
+    ///    Assert.assertEquals("5", Dec2Hex.convertToHex(new String[]{input}));
     ///}
 }
