@@ -40,19 +40,19 @@ class Dec2Hex {
         catch(ArrayIndexOutOfBoundsException e)
         {
             String message = e.getMessage();
-            System.out.print(message);
+            System.out.println(message);
             return message;
         }
         catch(NumberFormatException e)
         {
             String message = "Argument not an integer";
-            System.out.print(message);
+            System.out.println(message);
             return message;
         }
 		catch(IllegalArgumentException e)
         {
             String message = e.getMessage();
-            System.out.print(message);
+            System.out.println(message);
             return message;
         }
     }
